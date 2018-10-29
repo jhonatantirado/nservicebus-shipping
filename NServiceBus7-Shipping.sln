@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipping.EndPoint", "Shippi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipping.Contracts", "Shipping.Contracts\Shipping.Contracts.csproj", "{11DF0CB2-743D-4009-82D9-D937BC395CC4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Contracts", "Sales.Contracts\Sales.Contracts.csproj", "{AA740857-D4E0-4B7D-AC98-3102F6D5CC04}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billing.Contracts", "Billing.Contracts\Billing.Contracts.csproj", "{99AEEB50-AA50-4185-8D8E-D4B2102D9C3B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{11DF0CB2-743D-4009-82D9-D937BC395CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11DF0CB2-743D-4009-82D9-D937BC395CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11DF0CB2-743D-4009-82D9-D937BC395CC4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA740857-D4E0-4B7D-AC98-3102F6D5CC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA740857-D4E0-4B7D-AC98-3102F6D5CC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA740857-D4E0-4B7D-AC98-3102F6D5CC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA740857-D4E0-4B7D-AC98-3102F6D5CC04}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99AEEB50-AA50-4185-8D8E-D4B2102D9C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99AEEB50-AA50-4185-8D8E-D4B2102D9C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99AEEB50-AA50-4185-8D8E-D4B2102D9C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99AEEB50-AA50-4185-8D8E-D4B2102D9C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
