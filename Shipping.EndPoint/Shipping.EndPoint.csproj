@@ -13,6 +13,7 @@
     <PackageReference Include="NServiceBus.Persistence.Sql" Version="4.3.0" />
     <PackageReference Include="NServiceBus.RabbitMQ" Version="5.0.1" />
     <PackageReference Include="Sales.Contracts" Version="1.0.0" />
+    <PackageReference Include="Sendgrid" Version="9.10.0" />
     <PackageReference Include="Shipping.Contracts" Version="1.0.0" />
   </ItemGroup>
 
