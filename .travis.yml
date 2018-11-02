@@ -1,9 +1,22 @@
 language: csharp
+dist: trusty
+sudo: required
 mono: none
 dotnet: 2.1.301
-before_script: cd Shipping.EndPoint
+branches:
+  only:
+    - master
+services:
+  - docker
+before_install:
+  - docker-compose --version
+  - docker version
+install:
+  - export DOTNET_CLI_TELEMETRY_OPTOUT=1
 script:
- - dotnet restore
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker-compose build
+  - docker push jhonatantirado/nservicebus-shipping
 deploy:
    provider: cloudfoundry
    username: jhonatantiradotiradodeep@gmail.com
@@ -12,3 +25,4 @@ deploy:
    api: https://api.run.pivotal.io
    organization: kipubit
    space: development
+   manifest: ./Shipping.EndPoint/manifest.yml

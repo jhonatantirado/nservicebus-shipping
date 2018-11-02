@@ -1,0 +1,19 @@
+version: "3.2"
+
+networks:
+  backend:
+
+
+services:
+  nservicebus-shipping:
+    image: jhonatantirado/nservicebus-shipping
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Production
+    container_name: nservicebus-shipping
+    ports:
+      - "9005:80"
+    networks:
+      - backend
