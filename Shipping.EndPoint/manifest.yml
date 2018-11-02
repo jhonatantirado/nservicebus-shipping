@@ -3,6 +3,7 @@ applications:
 - name: dycsw-nservicebus-shipping-endpoint
   memory: 128MB
   instances: 1
+  disk_quota: 2GB
   docker:
     image: jhonatantirado/nservicebus-shipping
   stack: cflinuxfs2
