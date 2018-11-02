@@ -12,7 +12,7 @@ services:
       dockerfile: Dockerfile
     environment: 
       - ASPNETCORE_ENVIRONMENT=Production
-    container_name: nservicebus-shipping
+    container_name: dycsw-nservicebus-shipping-endpoint
     ports:
       - "9005:80"
     networks:
