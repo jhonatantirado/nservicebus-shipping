@@ -3,7 +3,8 @@ applications:
 - name: dycsw-nservicebus-shipping-endpoint
   memory: 128MB
   instances: 1
-  buildpack: dotnet_core_buildpack
+  docker:
+    image: jhonatantirado/nservicebus-shipping
   stack: cflinuxfs2
   no-route: true    
   health-check-type: process
